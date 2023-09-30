@@ -1,0 +1,17 @@
+body {
+        background-image: url(../assets/sky.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+      .card {
+        width: 80%;
+        border-radius:40px;
+      }
+      
