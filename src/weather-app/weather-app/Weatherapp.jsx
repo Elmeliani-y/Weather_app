@@ -23,39 +23,39 @@ const Weather = () => {
     location[0].innerHTML = data.name;
 
     if (data.weather[0].icon === "01d" || data.weather[0].icon === "01n") {
-      setWicon("./src/weather-app/assets/clear.png");
+      setWicon("../src/weather-app/assets/clear.png");
     } else if (
       data.weather[0].icon === "02d" ||
       data.weather[0].icon === "02n"
     ) {
-      setWicon("./src/weather-app/assets/cloud.png");
+      setWicon("../src/weather-app/assets/cloud.png");
     } else if (
       data.weather[0].icon === "03d" ||
       data.weather[0].icon === "03n"
     ) {
-      setWicon("./src/weather-app /assets /drizzle.png");
+      setWicon("../src/weather-app /assets /drizzle.png");
     } else if (
       data.weather[0].icon === "04d" ||
       data.weather[0].icon === "04n"
     ) {
-      setWicon("./src/weather-app/assets/drizzle.png");
+      setWicon("../src/weather-app/assets/drizzle.png");
     } else if (
       data.weather[0].icon === "09d" ||
       data.weather[0].icon === "09n"
     ) {
-      setWicon("./src/weather-app/assets/rain.png");
+      setWicon("!../src/weather-app/assets/rain.png");
     } else if (
       data.weather[0].icon === "10d" ||
       data.weather[0].icon === "10n"
     ) {
-      setWicon("./src/weather-app/assets/rain.png");
+      setWicon("../src/weather-app/assets/rain.png");
     } else if (
       data.weather[0].icon === "13d" ||
       data.weather[0].icon === "13n"
     ) {
-      setWicon("src/weather-app/assets/snow.png");
+      setWicon("../src/weather-app/assets/snow.png");
     } else {
-      setWicon("src/eather-app/ssets/lear.png");
+      setWicon("../src/eather-app/ssets/lear.png");
     }
   };
 
