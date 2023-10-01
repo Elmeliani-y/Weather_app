@@ -28,22 +28,22 @@ const Weather = () => {
       data.weather[0].icon === "02d" ||
       data.weather[0].icon === "02n"
     ) {
-      setWicon("./src/weather-app/assets/cloud.png");
+      setWicon("src/weather-app/assets/cloud.png");
     } else if (
       data.weather[0].icon === "03d" ||
       data.weather[0].icon === "03n"
     ) {
-      setWicon("./src/weather-app/assets/drizzle.png");
+      setWicon("src/weather-app/assets/drizzle.png");
     } else if (
       data.weather[0].icon === "04d" ||
       data.weather[0].icon === "04n"
     ) {
-      setWicon("./src/weather-app/assets/drizzle.png");
+      setWicon("src/weather-app/assets/drizzle.png");
     } else if (
       data.weather[0].icon === "09d" ||
       data.weather[0].icon === "09n"
     ) {
-      setWicon("./src/weather-app/assets/rain.png");
+      setWicon("src/weather-app/assets/rain.png");
     } else if (
       data.weather[0].icon === "10d" ||
       data.weather[0].icon === "10n"
@@ -53,9 +53,9 @@ const Weather = () => {
       data.weather[0].icon === "13d" ||
       data.weather[0].icon === "13n"
     ) {
-      setWicon("./src/weather-app/assets/snow.png");
+      setWicon("src/weather-app/assets/snow.png");
     } else {
-      setWicon("./src/weather-app/assets/clear.png");
+      setWicon("src/weather-app/assets/clear.png");
     }
   };
 
@@ -96,7 +96,7 @@ const Weather = () => {
           <div className="data-container">
             <div className="element">
               <img
-                src="./src/weather-app/assets/icons8-humidity.gif"
+                src="src/weather-app/assets/icons8-humidity.gif"
                 alt="Humidity Icon"
               />
               <div className="data">
@@ -107,7 +107,7 @@ const Weather = () => {
             </div>
             <div className="element">
               <img
-                src="./src/weather-app/assets/icons8-wind.gif"
+                src="src/weather-app/assets/icons8-wind.gif"
                 alt="Wind Icon"
               />
               <div className="data">
