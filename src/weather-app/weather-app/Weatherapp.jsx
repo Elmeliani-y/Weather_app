@@ -33,7 +33,7 @@ const Weather = () => {
       data.weather[0].icon === "03d" ||
       data.weather[0].icon === "03n"
     ) {
-      setWicon("/assets /drizzle.png");
+      setWicon("/assets/drizzle.png");
     } else if (
       data.weather[0].icon === "04d" ||
       data.weather[0].icon === "04n"
@@ -55,7 +55,7 @@ const Weather = () => {
     ) {
       setWicon("/assets/snow.png");
     } else {
-      setWicon("/ssets/lear.png");
+      setWicon("/assets/clear.png");
     }
   };
 
