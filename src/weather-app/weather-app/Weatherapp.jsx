@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; 
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
+
 const Weather = () => {
   let api_key = "60326e6df31d641398de65b92f21df84";
-  let [wicon, setWicon] = useState(""); 
+  let [wicon, setWicon] = useState("");
 
   let search = async () => {
     const element = document.getElementsByClassName("search-bar");
@@ -23,39 +24,39 @@ const Weather = () => {
     location[0].innerHTML = data.name;
 
     if (data.weather[0].icon === "01d" || data.weather[0].icon === "01n") {
-      setWicon("./src/weather-app/assets/clear.png");
+      setWicon("./weather-app/assets/clear.png");
     } else if (
       data.weather[0].icon === "02d" ||
       data.weather[0].icon === "02n"
     ) {
-      setWicon("src/weather-app/assets/cloud.png");
+      setWicon("./weather-app/assets/cloud.png");
     } else if (
       data.weather[0].icon === "03d" ||
       data.weather[0].icon === "03n"
     ) {
-      setWicon("src/weather-app/assets/drizzle.png");
+      setWicon("./weather-app/assets/drizzle.png");
     } else if (
       data.weather[0].icon === "04d" ||
       data.weather[0].icon === "04n"
     ) {
-      setWicon("src/weather-app/assets/drizzle.png");
+      setWicon("./weather-app/assets/drizzle.png");
     } else if (
       data.weather[0].icon === "09d" ||
       data.weather[0].icon === "09n"
     ) {
-      setWicon("src/weather-app/assets/rain.png");
+      setWicon("./weather-app/assets/rain.png");
     } else if (
       data.weather[0].icon === "10d" ||
       data.weather[0].icon === "10n"
     ) {
-      setWicon("./src/weather-app/assets/rain.png");
+      setWicon("./weather-app/assets/rain.png");
     } else if (
       data.weather[0].icon === "13d" ||
       data.weather[0].icon === "13n"
     ) {
-      setWicon("src/weather-app/assets/snow.png");
+      setWicon("./weather-app/assets/snow.png");
     } else {
-      setWicon("src/weather-app/assets/clear.png");
+      setWicon("./weather-app/assets/clear.png");
     }
   };
 
@@ -81,7 +82,7 @@ const Weather = () => {
             </div>
           </div>
           <div className="weather-image text-center">
-            <img src={wicon} height={70} />
+            <img src={wicon} height={70} alt="Weather Icon" />
           </div>
           <div className="weather-temp text-center">
             <p>
@@ -96,7 +97,7 @@ const Weather = () => {
           <div className="data-container">
             <div className="element">
               <img
-                src="src/weather-app/assets/icons8-humidity.gif"
+                src="./weather-app/assets/icons8-humidity.gif"
                 alt="Humidity Icon"
               />
               <div className="data">
@@ -107,7 +108,7 @@ const Weather = () => {
             </div>
             <div className="element">
               <img
-                src="src/weather-app/assets/icons8-wind.gif"
+                src="./weather-app/assets/icons8-wind.gif"
                 alt="Wind Icon"
               />
               <div className="data">
