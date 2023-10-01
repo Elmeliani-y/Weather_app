@@ -96,7 +96,7 @@ const Weather = () => {
           <div className="data-container">
             <div className="element">
               <img
-                src="src/weather-app/assets/icons8-humidity.gif"
+                src="./src/weather-app/assets/icons8-humidity.gif"
                 alt="Humidity Icon"
               />
               <div className="data">
@@ -107,7 +107,7 @@ const Weather = () => {
             </div>
             <div className="element">
               <img
-                src="src/weather-app/assets/icons8-wind.gif"
+                src="./src/weather-app/assets/icons8-wind.gif"
                 alt="Wind Icon"
               />
               <div className="data">
